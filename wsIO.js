@@ -46,7 +46,7 @@ class WsIO {
                 this.joinHandler(roomId, socket.id);
             });
         });
-        ser.listen(80);
+        ser.listen(8090);
     }
     tellEveryOneIMJoin(roomId, id){
         let room = this.rooms.get(roomId);
